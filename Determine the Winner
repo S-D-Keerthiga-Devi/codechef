@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,p1,p2,q1,q2,x,y;
+	cin>>t;
+	while(t>0)
+	{
+	    cin>>p1>>p2>>q1>>q2;
+	    x=max(p1,p2);
+	    y=max(q1,q2);
+	    if(x<y)
+	    {
+	        cout<<"P"<<endl;
+	    }
+	    else if(x>y)
+	    {
+	        cout<<"Q"<<endl;
+	    }
+	    else
+	    {
+	        cout<<"TIE"<<endl;
+	    }
+	    t--;
+	}
+	return 0;
+}
