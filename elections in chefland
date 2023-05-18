@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,n,x,count=0,age;
+	cin>>t;
+	while(t>0)
+	{
+	    cin>>n>>x;
+	    while(n>0)
+	    {
+	        cin>>age;
+	        if(age>=x)
+	        {
+	            count+=1;
+	        }
+	        n--;
+	    }
+	    cout<<count<<endl;
+	    count=0;
+	    t--;
+	}
+	return 0;
+}
