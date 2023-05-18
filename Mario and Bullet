@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,x,y,z,a;
+	cin>>t;
+	while(t>0)
+	{
+	    cin>>x>>y>>z;
+	    a=y/x;
+	    if((z-a)<0)
+	    {
+	        cout<<"0"<<endl;
+	    }
+	    else
+	    {
+	        cout<<(z-a)<<endl;
+	    }
+	    t--;
+	}
+	return 0;
+}
