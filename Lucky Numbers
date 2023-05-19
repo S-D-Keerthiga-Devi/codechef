@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,x,r,flag=0;
+	cin>>t;
+	while(t>0)
+	{
+	    cin>>x;
+	    while(x>0)
+	    {
+	       r=x%10;
+	       if(r==7)
+	       {
+	           flag=1;
+	           break;
+	       }
+	       x=x/10;
+	    }
+	    if(flag==1)
+	    {
+	        cout<<"YES"<<endl;
+	    }
+	    else
+	    {
+	        cout<<"NO"<<endl;
+	    }
+	    flag=0;
+	    t--;
+	}
+	return 0;
+}
