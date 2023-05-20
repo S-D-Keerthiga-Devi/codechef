@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,a,b,x;
+	cin>>t;
+	while(t>0)
+	{
+	    cin>>a>>b;
+	    x=21-a-b;
+	    if(x<=10)
+	    {
+	        cout<<x<<endl;
+	    }
+	    else
+	    {
+	        cout<<"-1"<<endl;
+	    }
+	    t--;
+	}
+	return 0;
+}
