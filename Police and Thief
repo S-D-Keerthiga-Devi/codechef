@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,x,y,a,b;
+	cin>>t;
+	while(t>0)
+	{
+	    cin>>x>>y;
+	    a=max(x,y);
+	    b=min(x,y);
+	    cout<<(a-b)<<endl;
+	    t--;
+	}
+	return 0;
+}
