@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,x,y;
+	double a;
+	cin>>t;
+	while(t>0)
+	{
+	    cin>>x>>y;
+	    a=x-(0.1*x);
+	    if(a<y)
+	    {
+	        cout<<"ONLINE"<<endl;
+	    }
+	    else if(a>y)
+	    {
+	       cout<<"DINING"<<endl; 
+	    }
+	    else
+	    {
+	        cout<<"EITHER"<<endl;
+	    }
+	    t--;
+	}
+	return 0;
+}
