@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,n,a,b,e=0,o=0;
+	cin>>t;
+	while(t>0)
+	{
+	    cin>>n>>a>>b;
+	    while(n>0)
+	    {
+	        if(n%2==0)
+	        {
+	            e++;
+	        }
+	        else
+	        {
+	            o++;
+	        }
+	        n--;
+	    }
+	    cout<<((e*a)+(o*b))<<endl;
+	    e=0;
+	    o=0;
+	    t--;
+	}
+	return 0;
+}
