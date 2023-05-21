@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,a,b;
+	cin>>t;
+	while(t>0)
+	{
+	    cin>>a>>b;
+	    if(a==b)
+	    {
+	        cout<<"YES"<<endl;
+	    }
+	    else if(a>b)
+	    {
+	        while(a>b)
+	        {
+	            b*=2;
+	        }
+	            if(a==b)
+	            {
+	                cout<<"YES"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"NO"<<endl;
+	            }
+	    }
+	   else{
+	        while(a<b)
+	        {
+	            a*=2;
+	        }
+	            if(a==b)
+	            {
+	                cout<<"YES"<<endl;
+	            }
+	            else
+	            {
+	                cout<<"NO"<<endl;
+	            }
+	    }
+	    t--;
+	}
+	return 0;
+}
