@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,n,k,m,count=0,a;
+	cin>>t;
+	while(t>0)
+	{
+	    cin>>n>>k;
+	    while(n>0)
+	    {
+	        cin>>m;
+	        a=m+k;
+	        if(a%7==0)
+	        {
+	            count++;
+	        }
+	        n--;
+	    }
+	    cout<<count<<endl;
+	    count=0;
+	    t--;
+	}
+	return 0;
+}
