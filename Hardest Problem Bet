@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,a,b,c,x,y;
+	cin>>t;
+	while(t>0)
+	{
+	    cin>>a>>b>>c;
+	    x=min(a,b);
+	    y=min(x,c);
+	    if(y==b)
+	    {
+	        cout<<"Bob"<<endl;
+	    }
+	    else if(y==c)
+	    {
+	        cout<<"Alice"<<endl;
+	    }
+	    else
+	    {
+	        cout<<"Draw"<<endl;
+	    }
+	    t--;
+	}
+	return 0;
+}
