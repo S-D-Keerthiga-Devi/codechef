@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,x;
+	cin>>t;
+	while(t>0)
+	{
+	    cin>>x;
+	    if(x%2==0 || x>=7)
+	    {
+	        cout<<"YES"<<endl;
+	    }
+	    else
+	    {
+	        cout<<"NO"<<endl;
+	    }
+	    t--;
+	}
+	return 0;
+}
