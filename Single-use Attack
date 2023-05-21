@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,h,x,y,temp;
+	cin>>t;
+	while(t>0)
+	{
+	    cin>>h>>x>>y;
+	    h-=y;
+	    temp=(h/x)+1;
+	    if(h%x==0)
+	    {
+	        cout<<temp<<endl;
+	    }
+	    else
+	    {
+	        cout<<temp+1<<endl;
+	    }
+	    t--;
+	}
+	return 0;
+}
