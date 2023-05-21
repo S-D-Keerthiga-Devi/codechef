@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,x,y,a;
+	cin>>t;
+	while(t>0)
+	{
+	    cin>>x>>y;
+	    if(x==y)
+	    {
+	        cout<<"0"<<endl;
+	    }
+	    else if(x>y)
+	    {
+	        a=x-y;
+	        if(a%2==0)
+	        {
+	            cout<<a/2<<endl;
+	        }
+	        else
+	        {
+	            cout<<(a/2)+2<<endl;
+	        }
+	    }
+	    else
+	    {
+	        a=y-x;
+	        cout<<a<<endl;
+	    }
+	    t--;
+	}
+	return 0;
+}
