@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,x,y,a=0;
+	cin>>t;
+	while(t>0)
+	{
+	    cin>>x>>y;
+	    if(x==y)
+	    {
+	        cout<<"0"<<endl;
+	    }
+	    else if(y>(x*(y/x)))
+	    {
+	         cout<<(y/x)<<endl;
+	    }
+	    else
+	    {
+	        cout<<(y/x)-1<<endl;
+	    }
+	    t--;
+	}
+	return 0;
+}
