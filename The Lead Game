@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,a,b,x,p1=0,p2=0,lead=0,w;
+	cin>>t;
+	while(t>0)
+	{
+	    cin>>a>>b;
+	    p1+=a;
+	    p2+=b;
+	    x=abs(p1-p2);
+	    if(x>lead)
+	    {
+	        lead=x;
+	        if(p1>p2)
+	        {
+	            w=1;
+	        }
+	        else
+	        {
+	            w=2;
+	        }
+	    }
+	    t--;
+	}
+	cout<<w<<" "<<lead<<endl;
+	return 0;
+}
