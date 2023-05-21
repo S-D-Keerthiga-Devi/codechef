@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,a,b;
+	cin>>t;
+	while(t>0)
+	{
+	    cin>>a>>b;
+	    if((b*2)>a)
+	    {
+	        cout<<a/2<<endl;
+	    }
+	    else
+	    {
+	        cout<<b<<endl;
+	    }
+	    t--;
+	}
+	return 0;
+}
