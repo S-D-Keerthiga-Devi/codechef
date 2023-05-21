@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	float x1,x2,y1,y2,x,y;
+	cin>>t;
+	while(t>0)
+	{
+	    cin>>x1>>x2>>y1>>y2;
+	    x=y1/x1;
+	    y=y2/x2;
+	    if(x<y)
+	    {
+	        cout<<"-1"<<endl;
+	    }
+	    else if(y<x)
+	    {
+	        cout<<"1"<<endl;
+	    }
+	    else
+	    {
+	        cout<<"0"<<endl;
+	    }
+	    t--;
+	}
+	return 0;
+}
